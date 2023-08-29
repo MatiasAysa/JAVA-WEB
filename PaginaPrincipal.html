@@ -61,19 +61,33 @@
       background-color: violet;
 
     }
-    .menu{
-      margin: 0 auto;
-      width: 900px;
-  
+    .menu a{
+     font-weight: 600;
+     padding-right: 10px;
+     cursor: pointer;
+    }
+    .menu a:hover{
+      color: black;
     }
 
     .menupr{
-  background: #03A9F4;
-  width: 100%;
-  clear: both;
-  content:'';
-  display: table;
+  background-color: #03A9F4;
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
+.menulogo{ 
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.menulogo:hover{
+background-color: rosybrown;
+}
+
+
 
 * {
   padding: 0;
@@ -92,16 +106,19 @@
         
     <!-- -----------------------------  HEADERRRR BARRA DEL MENU  ---------------------------------------  --> 
   <header class="menupr">
-    <div class="menu">
-      <nav class=" ">
+    <a href="https://www.youtube.com/watch?v=eGdifxqTnLE" class="menulogo">
+      <img src="logo.png" alt="no hay imagen" class="imgdebarra" width="220px" >
+    </a>
+    
+      <nav class="menu">
         <ul>
-          <li>CONTACTANOS</li>
-          <li>CONTACTANOS</li>
-          <li>CONTACTANOS</li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre Mi</a></li>
+          <li><a href="#">Servicio</a></li>
         </ul>
       </nav>
 
-  </div>
+ 
 
   </header>
   
