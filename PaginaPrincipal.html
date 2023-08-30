@@ -2,8 +2,9 @@
 <html lang="en">
 
   <head><!-- -----------------------------  HEAD,O PERDON,SOY DE BOCA,              CABEZA        ---------------------------------------  --> 
-    <meta charset="UTF-8" />
+    
     <title>PAGINA PRINCIPAL</title>
+    <link rel="icon" href="icono.ico">
 <!-- -----------------------------     PERSONALIZADO DE LA PAGINA PRINCIPAL -------------------------------------------  --> 
 <style>
 
@@ -11,64 +12,48 @@
         width: 325px; /* Ancho del círculo */
             height: 70px; /* Altura del círculo (igual al ancho para hacerlo un círculo perfecto) */
             background-color: #3498db; /* Color de fondo del círculo */
-            border-radius: 20%; /* Hace que el contenedor tenga forma circular */
             text-align: center; /* Centra el texto verticalmente y horizontalmente */
             line-height: 70px; /* Alinea verticalmente el texto en el centro del círculo */
             color: #ffffff; /* Color del texto */
-            margin: 20px;
+            margin: 90px;
+            
     }
     
     body{
-        background-image: url(luca.jpg);
-        background-size: 200px;
-        background-repeat: repeat;
+        background-color: wheat;
     }
-   
-    .buttonprincipal2{
-      
-      
-      cursor: pointer;
-      padding: 30px;
-      display: inline-block;
-      background-color: transparent;
-      border: 3px solid blue;
 
-    }
-    .buttonprincipal3{
-      
-      
-      cursor: pointer;
-      padding: 30px;
-      display: inline-block;
-      background-color: transparent;
-      border: 3px solid red;
+ 
 
-    }
     .buttonprincipal3:hover{
 
-      background-color: rgb(212, 85, 85);
+      transform: scale(1.2);
 }
     .buttonprincipal2:hover{
 
-      background-color: rgb(64, 64, 216);
+      transform: scale(1.2);
     }
-    .botonprincipal{
-      cursor: pointer;
-      background-color: transparent;
-      border: 5px solid green;
+    .menu{
+      list-style: none;
     }
-    .botonprincipal:hover{
-      background-color: violet;
-
+    .menupr .menu li{
+      display: inline-block;
+      padding: 0 20px;
     }
-    .menu a{
-     font-weight: 600;
-     padding-right: 10px;
-     cursor: pointer;
+    
+    .menupr .menu a{
+     font-size: 700;
+     color: aqua;
+    text-decoration: none;
     }
-    .menu a:hover{
+    .menupr .menu a:hover{
+      width: 325px;
+      height: 70px;
       color: black;
-    }
+      background-color: aquamarine;
+      border-radius:50%;
+
+      }
 
     .menupr{
   background-color: #03A9F4;
@@ -76,25 +61,91 @@
   height: 130px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 8%;
+  margin-bottom: 120px;
 }
 .menulogo{ 
 display: flex;
 align-items: center;
 cursor: pointer;
+transition: all 0.3s;
 }
 .menulogo:hover{
-background-color: rosybrown;
+
+transform: scale(1.2);
 }
+
 
 
 
 * {
   padding: 0;
   margin: 0;                  /* SELECCIONAMOS TODOS LOS ELEMENTOS DE LA PAGINA,YA SEA UNOS SIMPLES l1.*/
-  box-sizing: border-box;      /* usamor box sizing : border box para que todos los elementos esten como en cajas*/
+  box-sizing: border-box;  
+  font-family: Arial, Helvetica, sans-serif;    /* usamor box sizing : border box para que todos los elementos esten como en cajas*/
 }
+.line {
+    position: absolute;
+    width: 100%; /* Ancho de línea ajustado */
+    height: 370px; /* Aumentamos el grosor de la línea */
+    background-color: #4648c7; /* Color de la línea */
+    top: 55%;
+    transform: translateY(auto);
+    z-index: 1;
 
+  }
+  .buttonprincipal2{
+      cursor: pointer;
+      padding: 30px;
+      display: inline-block;
+      background-color: transparent;
+      border: transparent;
+      transition: all 0.3s;
+    }
+    .imagen1{
+      width: 300px;
+      height: auto;
+      margin-right: 40px;
+      margin-left: 200px;
+    }
+    .article-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  .buttonprincipal3{  
+      cursor: pointer;
+      padding: 30px;
+      display: inline-block;
+      background-color: transparent;
+      border: transparent;
+      transition: all 0.3s;
+    }
+  .line2 {
+    position: absolute;
+    width: 100%; /* Ancho de línea ajustado */
+    height: 370px; /* Aumentamos el grosor de la línea */
+    background-color: #c74f46; /* Color de la línea */
+    top: 137%;
+    transform: translateY(auto);
+    z-index: 1;
+
+  }
+  .article-container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  .div1{
+    margin-bottom: 180px;
+  }
+  .final{
+    height: 100px;
+    background-color: green;
+    margin-top: 200px;
+  }
 </style>
 <!-- -----------------------------     PERSONALIZADO DE LA PAGINA PRINCIPAL -------------------------------------------  --> 
 
@@ -106,14 +157,14 @@ background-color: rosybrown;
         
     <!-- -----------------------------  HEADERRRR BARRA DEL MENU  ---------------------------------------  --> 
   <header class="menupr">
-    <a href="https://www.youtube.com/watch?v=eGdifxqTnLE" class="menulogo">
+    <a href="JAVA WEB.html" class="menulogo">
       <img src="logo.png" alt="no hay imagen" class="imgdebarra" width="220px" >
     </a>
     
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Mi</a></li>
+      <nav >
+        <ul class="menu">
+          <li><a href="mangas.html">MANGAS</a></li>
+          <li><a href="comic.html">COMICS</a></li>
           <li><a href="#">Servicio</a></li>
         </ul>
       </nav>
@@ -122,26 +173,33 @@ background-color: rosybrown;
 
   </header>
   
-  
-  <center>
-        <button class="botonprincipal"><img src="logo.png" alt="NO HAY IMAGEN" width="300px"></button>
-        
-        <div class="circu"> 
-        <h2>Proximos Lanzamientos</h2> 
-    </div>
-
-   <button class="buttonprincipal2">
-    <a href="https://www.youtube.com/"><img src="manga.jpg" alt="NO HAY IMAGEN" width="210px" class="imagen1"></a>
-</button>
-
-    <button class="buttonprincipal3">
-    <img src="comic.jpg" alt="NO HAY IMAGEN" width="202px" class="imagen1">
-</button>
-
+  <!-- -----------------------------  HEADERRRR BARRA DEL MENU  ---------------------------------------  --> 
+  <div>
+    <h1 class="circu">NOVEDADES</h1>
+  </div>
+    
+      <div class="div1">
+        <div class="line"></div>
+    <div class="article-container">
+    <figure class="buttonprincipal2"><a href="https://tiendapanini.com.ar/" target="_blank"><img src="manga.jpg" alt="NO HAY IMAGEN" class="imagen1"></a>
+    </figure>
+      <p> AQUI ESTAMOS PAPA,AGUANTE BAKI</p>
+  </div>
 </div>
 
+<div>
+  <div class="line2"></div>
+  <div class="article-container2">
+    <figure class="buttonprincipal3">
+      <a href="https://www.ivrea.com.ar/" target="_blank"><img src="comic.jpg" alt="NO HAY IMAGEN" class="imagen1"></a>
+    </figure>
+    <p>PAAAAAAAAAAAAAAAAAAAAAA</p>
+  </div>
 
-      </center> 
+</div>
+<footer class="final">
+  <p>Derechos de autor © 2023 Mi Empresa. Todos los derechos reservados.</p>
+</footer>
 
 </body>   <!-- -----------------------------  BODY     O    CUERPO       ---------------------------------------  --> 
 
