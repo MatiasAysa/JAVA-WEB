@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>COMICS</title>
+    <style>
+           .menupr{
+  background-color: #03A9F4;
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+  margin-bottom: 120px;
+}
+.menulogo{ 
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: all 0.3s;
+}
+.menulogo:hover{
+
+transform: scale(1.2);
+}
+.menu{
+      list-style: none;
+    }
+    .menupr .menu li{
+      display: inline-block;
+      padding: 0 20px;
+    }
+    
+    .menupr .menu a{
+     font-size: 700;
+     color: aqua;
+    text-decoration: none;
+    }
+    .menupr .menu a:hover{
+      width: 325px;
+      height: 70px;
+      color: black;
+      background-color: aquamarine;
+      border-radius:50%;
+
+      }
+      body{
+        background-color: wheat;
+    }
+    * {
+  padding: 0;
+  margin: 0;                  /* SELECCIONAMOS TODOS LOS ELEMENTOS DE LA PAGINA,YA SEA UNOS SIMPLES l1.*/
+  box-sizing: border-box;  
+  font-family: Arial, Helvetica, sans-serif;    /* usamor box sizing : border box para que todos los elementos esten como en cajas*/
+}
+.circu{
+        width: 325px; /* Ancho del círculo */
+            height: 70px; /* Altura del círculo (igual al ancho para hacerlo un círculo perfecto) */
+            background-color: #3498db; /* Color de fondo del círculo */
+            text-align: center; /* Centra el texto verticalmente y horizontalmente */
+            line-height: 70px; /* Alinea verticalmente el texto en el centro del círculo */
+            color: #ffffff; /* Color del texto */
+            margin: 90px;
+            
+    }
+    </style>
+</head>
+<body>
+    <header class="menupr">
+        <a href="JAVA WEB.html" class="menulogo">
+          <img src="logo.png" alt="no hay imagen" class="imgdebarra" width="220px" >
+        </a>
+        
+          <nav >
+            <ul class="menu">
+              <li><a href="mangas.html">MANGAS</a></li>
+              <li><a href="comic.html">COMICS</a></li>
+              <li><a href="#">Servicio</a></li>
+            </ul>
+          </nav>
+    
+     
+    
+      </header>
+      <div>
+        <h1 class="circu">COMICS</h1>
+      </div>
+</body>
+</html>
